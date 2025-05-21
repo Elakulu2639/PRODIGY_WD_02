@@ -47,7 +47,7 @@ A beautiful, feature-rich stopwatch web application built with React. This appli
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stopwatch.git
+   git clone https://github.com/Elakulu2639/PRODIGY_WD_02.git
    cd stopwatch
    ```
 
