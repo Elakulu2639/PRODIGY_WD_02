@@ -1,0 +1,43 @@
+.display {
+  background: var(--card-bg);
+  padding: 1.5rem 2.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  backdrop-filter: blur(4px);
+  color: var(--card-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.time {
+  font-size: 3.2rem;
+  font-family: 'Courier New', monospace;
+  color: var(--card-text);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transition: color 0.3s;
+}
+
+.tick-animate {
+  animation: tick-pop 0.18s cubic-bezier(.4,2,.6,1) 1;
+}
+
+@keyframes tick-pop {
+  0% { transform: scale(1); opacity: 1; }
+  40% { transform: scale(1.12); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .display {
+    padding: 0.7rem 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  .time {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+} 

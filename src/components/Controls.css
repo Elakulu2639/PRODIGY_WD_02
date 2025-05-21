@@ -1,0 +1,112 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.control-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.control-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.start {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.pause {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.reset {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.lap {
+  background-color: #3498db;
+  color: white;
+}
+
+.controls-glass {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.control-button-glass {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  font-size: 0.98rem;
+  border: none;
+  border-radius: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  color: var(--card-text);
+  transition: background 0.2s, transform 0.2s, opacity 0.2s, color 0.3s;
+  outline: none;
+  backdrop-filter: blur(2px);
+  min-width: 90px;
+}
+
+.control-button-glass.start,
+.control-button-glass.resume {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+}
+.control-button-glass.pause {
+  background: linear-gradient(90deg, #757f9a 0%, #d7dde8 100%);
+  color: #333;
+}
+.control-button-glass.lap {
+  background: linear-gradient(90deg, #36d1c4 0%, #5b86e5 100%);
+  color: #fff;
+}
+.control-button-glass.reset {
+  background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+  color: #fff;
+}
+
+.control-button-glass:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-button-glass span {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .controls-glass {
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .control-button-glass {
+    padding: 0.32rem 0.6rem;
+    font-size: 0.85rem;
+    min-width: 60px;
+    border-radius: 0.8rem;
+  }
+  .control-button-glass span {
+    font-size: 1em;
+  }
+} 

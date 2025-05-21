@@ -1,0 +1,148 @@
+.lap-list {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lap-list h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.no-laps {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.lap-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lap-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.lap-item:last-child {
+  border-bottom: none;
+}
+
+.lap-number {
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.lap-time {
+  font-family: 'Courier New', monospace;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.lap-list-glass {
+  background: var(--card-bg);
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 370px;
+  backdrop-filter: blur(6px);
+  color: var(--card-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.lap-slide-in {
+  animation: lap-slide-in 0.35s cubic-bezier(.4,2,.6,1) 1;
+}
+
+@keyframes lap-slide-in {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.lap-list-glass h2 {
+  color: var(--card-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.no-laps {
+  text-align: center;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+.lap-list-glass ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lap-item-glass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.13);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  color: var(--card-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.lap-item-glass:last-child {
+  margin-bottom: 0;
+}
+
+.lap-number {
+  font-weight: bold;
+  color: var(--card-text);
+  transition: color 0.3s;
+}
+
+.lap-interval {
+  color: #b2fefa;
+  font-family: 'Courier New', monospace;
+  font-size: 1.05em;
+  margin: 0 0.7em;
+  transition: color 0.3s;
+}
+
+.lap-time {
+  font-family: 'Courier New', monospace;
+  color: var(--card-text);
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+@media (max-width: 600px) {
+  .lap-list-glass {
+    padding: 0.6rem 0.2rem 0.6rem 0.2rem;
+    border-radius: 10px;
+    max-width: 98vw;
+  }
+  .lap-list-glass h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .lap-item-glass {
+    padding: 0.4rem 0.5rem;
+    border-radius: 7px;
+    margin-bottom: 0.4rem;
+  }
+  .lap-number, .lap-interval, .lap-time {
+    font-size: 0.95em;
+  }
+} 

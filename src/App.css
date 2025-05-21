@@ -1,0 +1,64 @@
+/* Global CSS variables for theme colors */
+body {
+  --bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --text: #222;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode theme colors */
+body.dark {
+  --bg: linear-gradient(135deg, #232946 0%, #16161a 100%);
+  --text: #f8f8f8;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Main app container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
